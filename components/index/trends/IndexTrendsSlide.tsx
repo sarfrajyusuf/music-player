@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import FavoriteProvider from '@/components/providers/FavoriteProvider'
+// import FavoriteProvider from '@/components/providers/FavoriteProvider'
 import useNumber from '@/hooks/use-number'
 import MainButton from '@/components/ui/button/MainButton'
 
@@ -43,7 +43,7 @@ const IndexTrendsSlide = ({
                     ? <MainButton type='primary' round>Listening...</MainButton>
                     : <MainButton type='primary' round onClick={musicClickHandler}>Listen Now</MainButton>
                 }
-                <FavoriteProvider className={styles.favorite} musicId={trendInfo.id} activeClass={styles.active}></FavoriteProvider>
+                {/* <FavoriteProvider className={styles.favorite} musicId={trendInfo.id} activeClass={styles.active}></FavoriteProvider> */}
                 
             </div>
         </div>
